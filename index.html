@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do List</h1>
+
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <label for="taskInput">Task:</label>
+      <input type="text" id="taskInput" placeholder="Add a new task">
+
+      <label for="taskDate">Due Date:</label>
+      <input type="date" id="taskDate">
+
+      <label for="taskCategory">Category:</label>
+      <select id="taskCategory">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+
+      <label for="taskPriority">Priority:</label>
+      <select id="taskPriority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Search Input -->
+    <label for="searchTask">Search Tasks:</label>
+    <input type="text" id="searchTask" placeholder="Search tasks...">
+
+    <!-- View Options -->
+    <div class="view-options">
+      <button id="sortPriorityBtn">Sort by Priority</button>
+      <button id="sortDateBtn">Sort by Date</button>
+      <button id="calendarViewBtn">Calendar View</button>
+      <button id="listViewBtn">List View</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Calendar View -->
+    <div id="calendar"></div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="themeSwitch">
+        Dark Mode
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
